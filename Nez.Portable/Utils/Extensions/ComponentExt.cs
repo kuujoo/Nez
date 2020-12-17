@@ -36,7 +36,7 @@ namespace Nez
 		}
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public static List<T> GetComponents<T>(this Component self) where T : Component
+		public static List<T> GetComponents<T>(this Component self) where T : class
 		{
 			return self.Entity.GetComponents<T>();
 		}
