@@ -146,7 +146,8 @@ namespace Nez
 				PreferredBackBufferWidth = width,
 				PreferredBackBufferHeight = height,
 				IsFullScreen = isFullScreen,
-				SynchronizeWithVerticalRetrace = true
+				SynchronizeWithVerticalRetrace = true,
+				PreferHalfPixelOffset = true
 			};
 			graphicsManager.DeviceReset += OnGraphicsDeviceReset;
 			graphicsManager.PreferredDepthStencilFormat = DepthFormat.Depth24Stencil8;
