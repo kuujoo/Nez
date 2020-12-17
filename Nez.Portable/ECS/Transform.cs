@@ -300,6 +300,7 @@ namespace Nez
 				parent._children.Add(this);
 
 			_parent = parent;
+			_localDirty = _localPositionDirty = _localRotationDirty = _localScaleDirty = true;
 			SetDirty(DirtyType.PositionDirty);
 
 			return this;
