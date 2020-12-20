@@ -790,7 +790,7 @@ namespace Nez
 		/// </summary>
 		/// <returns>The component.</returns>
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
-		public T GetSceneComponent<T>() where T : SceneComponent
+		public T GetSceneComponent<T>() where T : class
 		{
 			for (var i = 0; i < _sceneComponents.Length; i++)
 			{
